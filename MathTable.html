@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Table</title>
+    <script>
+        function showTable()
+        {
+            console.clear()
+            var tableNo = +document.getElementById('txtNum').value;
+
+            for(var i = 1;i<=10;i++)
+            {
+                console.log(tableNo+" X "+i+" = "+(tableNo*i))
+            }
+        }
+    </script>
+
+</head>
+<body>
+        <label>Enter No :</label>
+        <input type="num" id="txtNum" placeholder="Enter a number">
+        <br><br>
+
+        <button id="btnShowTable" onclick="showTable()">Print Table</button>
+</body>
+</html>

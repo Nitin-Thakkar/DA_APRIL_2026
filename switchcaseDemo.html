@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case DEMO</title>
+    <script>
+        function getDayName()
+        {
+            console.log("getDayName Called.")
+
+            var dayNo = +document.getElementById('txtDayNumber').value;
+            console.log(typeof(dayNo));
+            var dayName;
+
+            switch(dayNo)
+            {
+                case 1:
+                    dayName="Monday";
+                    break;
+                case 2:
+                    dayName="Tuesday";
+                    break;
+                case 3:
+                    dayName="Wednesday";
+                    break;
+                case 4:
+                    dayName="Thursday";
+                    break;
+                case 5:
+                    dayName="Friday";
+                    break;
+                case 6:
+                    dayName="Saturday";
+                    break;
+                case 7:
+                    dayName="Sunday";
+                    break;
+                default:
+                    dayName = "Enter the Day Number between 1 to 7!!"
+                     break;
+                
+            }
+            document.getElementById("Result").innerHTML = dayName;
+
+        }
+    </script>
+</head>
+<body>
+    <lable>Enter Day Number :</lable>
+    <input type="number" id="txtDayNumber" name="txtDayNumber" placeholder="Enter Day Number between 1 to 7">
+    <br><br>
+
+    <button id="btnDayNumber" onclick="getDayName()">Get Day Name</button>
+    <p id ="Result"></p>
+    
+</body>
+</html>

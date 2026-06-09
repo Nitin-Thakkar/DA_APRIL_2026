@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Demo</title>
+    <script>
+        function whileLoopDemo()
+        {
+            console.log("========================While Loop========================")
+            var cnt=1;
+            while(cnt<=10)
+            {
+                console.log(cnt);
+                cnt=cnt+1;
+            }
+        }
+
+        function doWhileLoopDemo()
+        {
+            console.log("========================Do...While Loop========================")
+            var cnt=200;
+            do
+            {
+                console.log(cnt);
+                cnt+=1;  //cnt=cnt+1; cnt++;
+            }while(cnt<=10);
+
+            console.log("Cnt Value after loop :"+cnt)
+        }
+
+        function forLoopDemo()
+        {
+            console.log("========================For Loop========================")
+            // var cnt=11;
+            // do
+            // {
+            //     console.log(cnt);
+            //     cnt+=1;  //cnt=cnt+1; cnt++;
+            // }while(cnt<=10);
+
+            for(var cnt=1;cnt<=10;cnt++)
+            {
+                console.log(cnt);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <button id="btnWhileLoop" onclick="whileLoopDemo()">While Loop Demo</button>
+    <button id="btnDoWhileLoop" onclick="doWhileLoopDemo()">Do...While Loop Demo</button>
+    <button id="btnForLoop" onclick="forLoopDemo()">For Loop Demo</button>
+</body>
+</html>

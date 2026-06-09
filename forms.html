@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="name" id="lblFullName">Full Name :</label>
+        <input type="text" id="txtFullName" name="txtFullName" placeholder="Enter your full Name">
+
+        <br><br>
+        <lable for="email" id="lblEmail">Email :</lable>
+        <input type="email" id="txtEmail" name="txtEmail" placeholder="abc@example.com">
+
+        <br><br>
+        <lable for="contact" id="lblContact">Contact :</lable>
+        <input type="number" id="txtContact" name="txtContact" placeholder="Enter your contact number">
+
+        <br><br>
+        <label for="password" id="lblPassword">Password :</label>
+        <input type="password" id="txtPassword" name="txtPassword" placeholder="Enter storng password">
+
+        <br><br>
+        <label for="Gender" id="rdGender">Gender :</label>
+        <input type="radio" id="rdMale" name="gender" value="M"> Male
+        <input type="radio" id="rdFemale" name="gender" value="F"> Female
+
+        <br><br>
+        <label id="sltYear" for="Year">Select Year :</label>
+        <select id="sltYear" name="sltYear">
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>       
+        </select>
+
+        <br><br>
+        <label id="lblHobby" for="Hobby"> Hobby :</label>
+        <input type="checkbox" id="chkReading" name="Hobby" value="reading">Reading
+        <input type="checkbox" id="chkTravelling" name="Hobby" value="travelling">Travelling
+        <input type="checkbox" id="chkShopping" name="Hobby" value="shopping">Shopping
+
+        <br><br>
+        <label id="lblAddress" for="Address"> Address: </label>
+        <textarea id="txtAreaAddress" name="txtAreaAddress" rows="2">
+        </textarea>
+
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>

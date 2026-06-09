@@ -1,0 +1,32 @@
+        /* CSS by TagName */
+        h1,pre
+        {
+            color:rgb(143, 163, 206);
+            background-color: black;  
+        }
+
+        /* CSS By Id */
+
+        #firstPara,#thirdPara,#fifthPara
+        {
+            font-size: xx-large;background-color: rgb(244, 243, 242);
+            color:rgb(51, 54, 107);
+        }
+        #secondPara,#fourthPara
+        {
+            font-size: xx-large;background-color: cadetblue;
+        }
+
+        /* css by class */
+        .oddPara
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;background-color: azure;
+        }
+
+        .evenPara
+        {
+            font-family:cursive;
+            font-size: xx-large;background-color: cadetblue;
+        }
+    

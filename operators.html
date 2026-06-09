@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators Demo in Javascript</title>
+    <script>
+            function operators()
+            {
+                console.log("Operator Function called!!")
+                //declaration of variables
+                var no1 = +document.getElementById('txtNo1').value;
+                var no2 = +document.getElementById('txtNo2').value;
+
+                // alert(typeof(no1));
+                // Arithmetic Operation
+
+                // console.log(no1+" + "+no2+" = "+(no1+no2));
+                // console.log(no1+" - "+no2+" = "+(no1-no2));
+                // console.log(no1+" X "+no2+" = "+(no1*no2));
+                // console.log(no1+" / "+no2+" = "+(no1/no2));
+                
+                // // comparison operator
+                // console.log(no1=='10'); // TRUE
+                // console.log(no1==='10'); // False
+                // console.log(no1===10); // TRUE
+                // console.log(no1+">="+no2+"=>"+(no1>=no2));
+
+                // alert(typeof('10'));
+                // alert(typeof(10));
+                // alert(10=='10');
+
+
+
+                
+                if(no1>no2)
+                {
+                    alert(no1+" is Greter than "+no2);
+                }
+                else if(no1==no2)
+                {
+                    alert("Both numbers are equal")
+                }
+                else
+                {
+                    alert(no1+" is less than "+no2);
+                }
+
+            }
+    </script>
+</head>
+<body>
+    <label>No 1:</label>
+    <input type="number" id="txtNo1" placeholder="Enter no1">
+    <br><br>
+
+    <label>No 2:</label>
+    <input type="number" id="txtNo2" placeholder="Enter no2">
+
+    <br><br>
+    <button id="btnShow" onclick="operators()">Show</button>
+</body>
+</html>
